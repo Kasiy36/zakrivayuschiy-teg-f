@@ -86,13 +86,6 @@
   align-items: center;
 }
 
-.button__text {
-  font-family: var(--font-title);
-  font-weight: 400;
-  font-size: 0.875em;
-  line-height: 90%;
-}
-
 .image {
   display: block;
   object-fit: cover;
