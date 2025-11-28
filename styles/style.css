@@ -111,8 +111,8 @@
 }
 @supports (-webkit-text-stroke: green) {
   .water-mark {
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: var(--water-mark-border-color);
+-webkit-text-stroke: 1px var(--water-mark-border-color);
+    text-stroke: 1px var(--water-mark-border-color);
     text-shadow: none;
     z-index: 1;
   }
@@ -278,6 +278,15 @@
   padding: 15px 17px;
 }
 
+.button-save:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+.button-ok:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
 .dialog__text {
   font-family: var(--font-title);
   font-weight: 400;
@@ -349,7 +358,7 @@
   filter: invert(35%);
 }
 
-.filtres {
+.filters {
   filter: sepia(80%) contrast(120%) brightness(90%) saturate(150%);
 }
 
